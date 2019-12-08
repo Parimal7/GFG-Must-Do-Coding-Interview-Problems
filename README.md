@@ -2,7 +2,7 @@
 
 Solved problems from the GeeksForGeeks coding course. It is free of cost and more organized than solving random Leetcode problems. I will mention the problem name with the best possible (known) solution as a hint for a quick revision.
 
-#Array
+# Array
 
 1. missing-number-in-array: Sum up the numbers and subtract each element. O(n) 
 2. majority-element: Traverse just once, keeping track of element counts in array itself. O(n)
