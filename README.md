@@ -20,3 +20,10 @@ Solved problems from the GeeksForGeeks coding course. It is free of cost and mor
 14. **boolean-matrix-problem**: Traverse the array, store row/coloumn where 1 occurs. Traverse again and print 1 if it belongs to earlier stored row/coloumn.
 15. **merge-without-extra-space**: Study shellshort then solve it. O((n+m)log(n+m)), constant extra space.
 16. **binary-search**: Classic algorithm
+
+# String
+1. **anagram**:
+2. **reverse-words-in-a-given-string**: Reverse individual words, then reverse the complete string. O(n)
+3. **remove-duplicates**: Use hashmap to store characters occuring for the first time, print them.
+4. **longest-distinct-characters-in-string**: 
+5. **check-if-string-is-rotated-by-two-places**: Only 2 directions possible, check if either is true.
