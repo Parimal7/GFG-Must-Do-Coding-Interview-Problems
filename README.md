@@ -27,3 +27,6 @@ Solved problems from the GeeksForGeeks coding course. It is free of cost and mor
 3. **remove-duplicates**: Use hashmap to store characters occuring for the first time, print them.
 4. **longest-distinct-characters-in-string**: 
 5. **check-if-string-is-rotated-by-two-places**: Only 2 directions possible, check if either is true.
+
+# Linked List
+1. **rotate-a-linked-list**: Rearrange links of required nodes.
