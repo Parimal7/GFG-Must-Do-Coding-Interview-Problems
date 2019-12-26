@@ -30,3 +30,4 @@ Solved problems from the GeeksForGeeks coding course. It is free of cost and mor
 
 # Linked List
 1. **rotate-a-linked-list**: Rearrange links of required nodes.
+2. **reverse-a-linked-list**: 
