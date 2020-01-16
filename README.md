@@ -34,3 +34,11 @@ Solved problems from the GeeksForGeeks coding course. It is free of cost and mor
 3. **reverse-a-linked-list-in-groups-of-given-size**:
 4. **check-if-linked-list-is-pallindrome**: Use stack data structure, if odd length, skip middle element.
 5. **detect-loop-in-linked-list**: Use fast/slow pointers. 
+
+# Dynamic Programming
+1.
+2.
+3.
+4.
+5.
+6. longest-common-subsequence: Recursive memoization, compare last two characters.
