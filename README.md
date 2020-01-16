@@ -30,4 +30,7 @@ Solved problems from the GeeksForGeeks coding course. It is free of cost and mor
 
 # Linked List
 1. **rotate-a-linked-list**: Rearrange links of required nodes.
-2. **reverse-a-linked-list**: 
+2. **reverse-a-linked-list**: Use previous, current and next pointers to solve iteratively.
+3. **reverse-a-linked-list-in-groups-of-given-size**:
+4. **check-if-linked-list-is-pallindrome**: Use stack data structure, if odd length, skip middle element.
+5. **detect-loop-in-linked-list**: Use fast/slow pointers. 
