@@ -1,6 +1,4 @@
-#include <iostream>
-#include <string>
-#include <unordered_map>
+#include <bits/stdc++.h>
 using namespace std;
 int main() {
     int t;
@@ -8,22 +6,22 @@ int main() {
     while(t--) {
         string s;
         cin >> s;
-        unordered_map<char, int> umap;
-        int i = 0;
-        int maxCount = 0, count = 0;
-        for(int i = 0; i < s.length(); ++i) {
-            cout << "Currently at " << s[i] << endl;
-            if(umap.find(s[i]) == umap.end()) {
-                umap[s[i]] = i;
-                count++;
-            }
+        int dp[26];
+        memset(dp, -1, sizeof(dp));
+        dp[s[0] - 'a'] = 0;
+        int maxLen = 1, currLen = 1, prevIndex;
+        for(int i = 1; i < int(s.length()); ++i) {
+            prevIndex = dp[s[i] - 'a'];
+            // if the current character is not a part of substring
+            if(prevIndex == -1 || i - currLen > prevIndex) 
+                currLen++;
             else {
-                maxCount = max(maxCount, count);
-                count = 0;
-                count++;
-                umap[s[i]] = i;
+                maxLen = max(maxLen, currLen);
+                currLen = i - prevIndex;
             }
+            dp[s[i] - 'a'] = i;
         }
-        cout << maxCount << endl;x  
+        maxLen = max(maxLen, currLen);
+        cout << maxLen << endl;
     }
 }
