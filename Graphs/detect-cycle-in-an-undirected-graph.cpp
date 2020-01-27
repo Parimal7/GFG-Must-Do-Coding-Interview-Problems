@@ -1,0 +1,28 @@
+bool dfs(vector<int> adj[], int source, int parent[], int visited[]) {
+    visited[source] = 1;
+    for(auto x:adj[source]) {
+        if(visited[x] == 0) {
+            parent[x] = source;
+            if(dfs(adj, x, parent, visited))
+                return true;
+        }
+        else if(visited[x] == 1 && parent[source] != x) {
+           return true;
+        }
+    }
+    return false;
+}
+
+bool isCyclic(vector<int> adj[], int V) {
+    bool flag = false;
+    int parent[V+1];
+    int visited[V+1] = {0};
+    memset(parent, -1, sizeof(parent));
+    for(int i = 0; i < V; ++i) {
+        if(!visited[i]) {
+            flag = dfs(adj, i, parent, visited);
+            if(flag) break;
+        }
+    }
+    return flag;
+}
