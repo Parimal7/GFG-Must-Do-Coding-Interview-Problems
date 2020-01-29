@@ -54,3 +54,21 @@ Solved problems from the GeeksForGeeks coding course. It is free of cost and mor
 4.
 5.
 6. longest-common-subsequence: Recursive memoization, compare last two characters.
+
+
+# Graphs
+1. depth-first-traversal-for-a-graph: Classic algorithm, use recursion with a boolean array for visited nodes.
+2. breadth-first-traversal-for-a-graph: Another classic, use queue.
+3. topological-sort: Use DFS and on the recursive call back, add the element to a vector. Reversed vector is the
+   topological ordering.
+4. detect-cycle-in-an-undirected-graph: Use dfs and the concept of assigning parents to each node.
+5. detect-cycle-in-a-directed-graph: Similar to undirected graph, but instead of marking nodes as visited / unvisited,
+   we also use a third marking scheme, not visited, currently visiting, and visited.
+6. find-the-number-of-islands: Count the number of times dfs is needed for each node.
+7. implementing-dijkstra-set-1-adjacency-matrix: Classic SSP algorithm, implemented lazy dijkstra using priority-queue.
+8. find-whether-path-exist: Simple application of dfs ( why not bfs? because it takes more time going layer wise ).
+9. shortest-source-to-destination-path: Use BFS with a distance array.
+10. minimum-cost-path: Use eager dijkstra algorithm ( set instead of priority queue ).
+11. implementing-floyd-warshall: Three for loops is all you need. Do not use INTMAX as it can give integer overflow,
+    use a bigger number like 10e7 instead
+12.
