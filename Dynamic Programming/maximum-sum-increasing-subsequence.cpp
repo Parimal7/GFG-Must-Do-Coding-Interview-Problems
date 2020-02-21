@@ -9,7 +9,7 @@ int maxSumSequence(int arr[], int prevIndex, int currentIndex, int n) {
     if(currentIndex == n) return 0;
     if(cache[prevIndex + 1][currentIndex] != -1) return cache[prevIndex + 1][currentIndex];
     if(prevIndex < 0 || arr[currentIndex] > arr[prevIndex]) {
-        return cache[prevIndex + 1][currentIndex] = max(1 + maxSumSequence(arr, currentIndex, currentIndex + 1, n), maxSumSequence(arr, prevIndex, currentIndex + 1, n));
+        return cache[prevIndex + 1][currentIndex] = max(arr[currentIndex] + maxSumSequence(arr, currentIndex, currentIndex + 1, n), maxSumSequence(arr, prevIndex, currentIndex + 1, n));
     }
     else return cache[prevIndex + 1][currentIndex] = maxSumSequence(arr, prevIndex, currentIndex + 1, n);
 }
@@ -21,11 +21,7 @@ int main() {
         int n;
         cin >> n;
         int arr[n];
-        for(int i = 0; i < N+10; i++) {
-            for(int j = 0; j < N+10; j++) {
-                cache[i][j] = -1;
-            }
-        }
+        memset(cache, -1, sizeof(cache));
         for(int i = 0; i < n; ++i) cin >> arr[i];
         cout << maxSumSequence(arr, -1, 0, n) << endl;
     }
