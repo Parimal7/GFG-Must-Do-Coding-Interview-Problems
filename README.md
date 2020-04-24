@@ -7,7 +7,7 @@ Solved problems from the GeeksForGeeks coding course. It is free of cost and mor
 1. **missing-number-in-array**: Sum up the numbers and subtract each element. O(n) 
 2. **majority-element**: Traverse just once, keeping track of element counts in array itself. O(n)
 3. **leaders-in-an-array**: Traverse in reverse, keeping track of max till now. If it changes, print it. O(n)
-4. **equilibrium-point**: 
+4. **equilibrium-point**: Sum all the numbers, traverse again with int left = 0 and compare both.
 5. **largest-subarray-of-0s-and-1s**: Convert 0's to -1 then find largest subarray with sum 0 using hashmap. O(n)
 6. **subarray-with-given-sum**: 
 7. **sort-an-array-of-0s-1s-and-2s**: Count number of 0's, 1's and 2's. Fill array till count of 0, 1 and 2 becomes zero. O(n)
